@@ -121,8 +121,13 @@ function HomeModule({setTab}){
   ];
   return (
     <div>
-      <div style={{background:`linear-gradient(135deg, ${NAVY} 0%, #1A3060 100%)`,borderRadius:14,padding:"32px 20px 28px",display:"flex",justifyContent:"center",marginBottom:20}}>
+      <div style={{background:`linear-gradient(135deg, ${NAVY} 0%, #1A3060 100%)`,borderRadius:14,padding:"32px 20px 20px",display:"flex",flexDirection:"column",alignItems:"center",gap:12,marginBottom:20}}>
         <TASSLogo size="lg" theme="dark"/>
+        <a href="https://theapprenticeshipsuccesssystem.co.uk"
+          style={{display:"flex",alignItems:"center",gap:6,textDecoration:"none",background:"rgba(255,255,255,0.1)",border:"1px solid rgba(255,255,255,0.2)",borderRadius:99,padding:"5px 14px"}}>
+          <span style={{fontSize:12}}>🏠</span>
+          <span style={{color:"rgba(255,255,255,0.8)",fontSize:11,fontWeight:700,letterSpacing:"0.05em"}}>All Modules</span>
+        </a>
       </div>
       <Card style={{borderLeft:`4px solid ${RED}`,background:"#FEF2F2"}}>
         <p style={{color:"#991B1B",fontSize:11,fontWeight:700,textTransform:"uppercase",letterSpacing:0.5,margin:"0 0 4px"}}>Motor Vehicle</p>
@@ -734,6 +739,11 @@ export default function TASSMotorVehicle(){
             <div style={{color:"rgba(255,255,255,0.6)",fontWeight:700,fontSize:11,textTransform:"uppercase",letterSpacing:0.5}}>Motor Vehicle</div>
             <div style={{color:WHITE,fontSize:13,fontWeight:700,marginTop:2}}>{current?.icon} {current?.label}</div>
           </div>
+          <a href="https://theapprenticeshipsuccesssystem.co.uk" 
+            style={{display:"flex",flexDirection:"column",alignItems:"center",gap:2,textDecoration:"none",flexShrink:0,opacity:0.75,padding:"4px 6px",borderRadius:8,border:"1px solid rgba(255,255,255,0.15)"}}>
+            <span style={{fontSize:14}}>🏠</span>
+            <span style={{color:"rgba(255,255,255,0.8)",fontSize:8,fontWeight:700,textTransform:"uppercase",letterSpacing:0.5,whiteSpace:"nowrap"}}>All Modules</span>
+          </a>
         </div>
       )}
       <div style={{maxWidth:640,margin:"0 auto",padding:"20px 16px 110px"}}>
